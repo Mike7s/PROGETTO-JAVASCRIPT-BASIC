@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+body {
+display: flex;
+flex-direction: column;
+background-image: url('../media/img/calcio.jpg');
+font-family: "nunito sans";
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #BEC6C2;
+}
+
+.display {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3%;
+    background-image: url('../media/img/door.png');
+    background-repeat: no-repeat;
+}
+
+.leg {
+    height: 210px;
+    width: 60px;
+    background-color: blue;
+    border-radius:10px 10px 0 0;
+    margin-left: 10px;
+}
+
+.foot {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 0 20px 0 0;
+    margin-left: 10px;
+    background-color: pink;
+}
+
+.ball {
+    position: absolute;
+    bottom: 30px;
+    right: -30px;
+    border-radius: 35px;
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    background-image: url('../media/img/ball.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.bounce-animation {
+    animation: bounce 0.5s ease;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-decrease:hover {
+    background-color: #F94E56;
+}
+
+.btn-increase:hover {
+    background-color: lightgreen;
+}
+
+.btn-increase,
+.btn-decrease {
+    margin: 40px;
+    width: 40px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-reset {
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.level {
+    height: 20px;
+    width: 300px;
+    font-weight: bold;
+}
